@@ -1,0 +1,142 @@
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+
+.footer__address {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.footer__logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.footer__logostudio {
+  color: #ffffff;
+}
+
+.footer__map {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--third-contacts-color);
+}
+
+.footer__mail {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-contacts-color);
+}
+
+.footer__tel {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-contacts-color);
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.join__box {
+  margin-left: 70px;
+}
+
+.join__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--second-title-color);
+}
+
+.join__list {
+  display: flex;
+  justify-content: center;
+}
+
+.join__item {
+  width: 44px;
+  height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.join__link {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  transition: background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.join__icon {
+  fill: var(--second-title-color);
+}
+
+.online {
+  margin-left: auto;
+}
+
+.online__signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+
+.online__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: inherit;
+  padding: 15px 16px;
+  color: #ffffff;
+  margin-right: 12px;
+}
+
+.online__button {
+  cursor: pointer;
+  border: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #ffffff;
+}
+
+.button__icon {
+  margin-left: 10px;
+  fill: #ffffff;
+}
