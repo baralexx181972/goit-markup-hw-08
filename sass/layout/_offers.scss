@@ -1,8 +1,8 @@
-.navigation {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  & .navigation__item:not(:last-child) {
+  & .filter__item:not(:last-child) {
     margin-right: 8px;
   }
 }
@@ -11,7 +11,7 @@
 //   padding-top: 94px;
 // }
 
-.navigation__button {
+.filter__button {
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
