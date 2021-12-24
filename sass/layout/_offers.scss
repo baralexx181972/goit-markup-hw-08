@@ -1,9 +1,14 @@
 .filter {
   display: flex;
-  justify-content: center;
+
+  flex-wrap: wrap;
   margin-bottom: 50px;
   & .filter__item:not(:last-child) {
     margin-right: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
   }
 }
 
@@ -40,6 +45,17 @@
   padding-top: 50px;
   padding-bottom: 94px;
 } */
+.offers {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin-left: -30px;
+  // margin-bottom: -30px;
+}
 
 .offers__title {
   font-weight: 700;
@@ -56,17 +72,23 @@
   color: var(--main-text-color);
 }
 
-.offers {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
-}
-
 .offers__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  // flex-basis: calc(100% / 3 - 30px);
+  // margin-left: 30px;
+  // margin-bottom: 30px;
 }
 
 .offers__link {

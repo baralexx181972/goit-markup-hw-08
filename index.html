@@ -24,7 +24,7 @@
         <a lang="en" class="logo" 
         href="">Web<span class="logo__dark">Studio</span>
        </a>
-        <button type="button">Open</button>
+        <button class="button__open" type="button">Open</button>
         <div class="mobile__menu">
           <nav class="navigation">          
                   
@@ -41,15 +41,8 @@
                   
               </ul>
           </nav>
-          
+          <div class="mobile__thumb">
             <ul class="contacts">
-              <li class="contacts__item">
-                <a class="contacts__link" href="mailto:info@devstudio.com">
-                  <svg class="contacts__icon" width="16" height="12">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                  </svg> 
-                  info@devstudio.com</a>
-              </li>
               <li class="contacts__item">
                 <a class="contacts__link" href="tel:+380961111111">
                   <svg class="contacts__icon" width="10" height="16">
@@ -57,6 +50,14 @@
                   </svg>
                   +38 096 111 11 11</a>
               </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com">
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg> 
+                  info@devstudio.com</a>
+              </li>
+              
             </ul>
             <ul class="mobile__social">
               <li>Instagram</li>
@@ -64,6 +65,8 @@
               <li>Facebook</li>
               <li>LinkedIn</li>
             </ul>
+          </div>
+          <button class="button__close" type="button">Close</button>
         </div>
       </div>
     </header>
@@ -397,7 +400,7 @@
 
       <!-- Footer -->
 
-        <footer class="footer" id="contact" >
+        <footer class="footer block" id="contact" >
           <div class="container footer__container">
             <div class="">
               <a lang="en" class="footer__logo" href="">Web<span class="footer__logostudio">Studio</span></a>
