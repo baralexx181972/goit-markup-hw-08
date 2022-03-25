@@ -110,6 +110,7 @@ footer {
 }
 
 .backdrop {
+  padding: 15px;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
@@ -123,18 +124,44 @@ footer {
   transition: transform 500ms;
 }
 
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    padding: 0;
+  }
+}
+
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 100%;
+  height: 100%;
   background-color: var(--second-title-color);
   border-radius: 4px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
   padding: 40px;
-  transform: scale(1);
-  transform: translate(-50%, -50%);
   transition: transform 500ms var(--timing-function);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(1);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__close {
@@ -274,10 +301,17 @@ footer {
 
 .policy__text,
 .policy__link {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .policy__text,
+  .policy__link {
+    font-size: 14px;
+  }
 }
 
 .policy__link {
@@ -710,6 +744,16 @@ footer {
 
 .section--no-padding-top {
   padding-top: 0;
+}
+
+.section--desctop-only {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section--desctop-only {
+    display: block;
+  }
 }
 
 .works {

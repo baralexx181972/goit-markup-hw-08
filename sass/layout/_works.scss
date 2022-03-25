@@ -2,6 +2,13 @@
   padding-top: 0;
 }
 
+.section--desctop-only {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .works {
   display: flex;
 }
