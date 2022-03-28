@@ -131,6 +131,7 @@ footer {
 }
 
 .modal {
+  overflow: auto;
   width: 100%;
   height: 100%;
   background-color: var(--second-title-color);
@@ -396,14 +397,12 @@ footer {
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
-    padding-top: 26px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 93px;
-    padding-top: 24px;
   }
 }
 
@@ -475,6 +474,8 @@ footer {
 }
 
 .header__container {
+  align-items: center;
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 16px 0;
@@ -563,6 +564,8 @@ footer {
 
 @media screen and (max-width: 767px) {
   .mobile__menu {
+    z-index: 1;
+    overflow: auto;
     position: fixed;
     top: 0;
     left: 0;
@@ -1163,16 +1166,27 @@ footer {
 .filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .filter .filter__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  .filter .filter__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 

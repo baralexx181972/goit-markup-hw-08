@@ -12,12 +12,12 @@
 
   @media screen and (min-width: 768px) {
     margin-right: 88px;
-    padding-top: 26px;
+    // padding-top: 26px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
-    padding-top: 24px;
+    // padding-top: 24px;
   }
 }
 
@@ -96,13 +96,15 @@
 }
 
 .header__container {
+  align-items: center;
+  position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 16px 0;
+   padding: 16px 0;
 
   @media screen and (min-width: 768px) {
     justify-content: flex-start;
-    padding: 0;
+   padding: 0;
   }
 }
 
@@ -178,6 +180,8 @@
 
 .mobile__menu {
   @media screen and (max-width: 767px) {
+    z-index: 1;
+    overflow: auto;
     position: fixed;
     top: 0;
     left: 0;
